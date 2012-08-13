@@ -1,8 +1,7 @@
 #include <stdio.h>
+#include "utils.c"
 
 // selection sort w/ pointers
-
-void printInts(int *ref, int count);
 
 int main(int argc, char *argv[])
 {
@@ -36,12 +35,4 @@ int main(int argc, char *argv[])
   printInts(items, itemCount);
 
   return 0;
-}
-
-void printInts(int *ref, int count) {
-  int i;
-  for(i = 0; i < count; i++) {
-    printf("%d ", *(ref+i));
-  }
-  printf("\n");
 }
