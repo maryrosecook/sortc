@@ -1,8 +1,8 @@
-void printInts(int *ref, int count);
+void printInts(int *ref, int start, int end);
 
-void printInts(int *ref, int count) {
+void printInts(int *ref, int start, int end) {
   int i;
-  for(i = 0; i < count; i++) {
+  for(i = start; i <= end; i++) {
     printf("%d ", *(ref+i));
   }
   printf("\n");
