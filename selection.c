@@ -8,7 +8,9 @@ int main(int argc, char *argv[])
   int itemCount = 9;
   int items[9] = {8, 7, 6, 5, 4, 3, 2, 1, 0};
 
-  printInts(items, itemCount);
+  printInts(items, 0, itemCount - 1);
+  selection(items, itemCount);
+  printInts(items, 0, itemCount - 1);
 
   int i;
   for(i = 0; i < itemCount - 1; i++) {
@@ -27,8 +29,4 @@ int main(int argc, char *argv[])
       *(items + smallestJ) = oldItem;
     }
   }
-
-  printInts(items, itemCount);
-
-  return 0;
 }

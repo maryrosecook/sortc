@@ -12,9 +12,9 @@ int main(int argc, char *argv[])
   int items[9] = {8, 7, 6, 5, 4, 3, 2, 1, 0};
   int tmp[9] = {};
 
-  printInts(items, itemCount);
+  printInts(items, 0, itemCount - 1);
   mergeSort(items, tmp, 0, itemCount - 1);
-  printInts(items, itemCount);
+  printInts(items, 0, itemCount - 1);
 
   return 0;
 }
