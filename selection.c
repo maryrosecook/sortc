@@ -8,8 +8,6 @@ int main(int argc, char *argv[])
   int itemCount = 9;
   int items[9] = {8, 7, 6, 5, 4, 3, 2, 1, 0};
 
-  // print unsorted array
-  printf("Unsorted: ");
   printInts(items, itemCount);
 
   int i;
@@ -30,8 +28,6 @@ int main(int argc, char *argv[])
     }
   }
 
-  // print sorted array
-  printf("Sorted:   ");
   printInts(items, itemCount);
 
   return 0;
