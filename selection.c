@@ -3,6 +3,8 @@
 
 // selection sort w/ pointers
 
+void selection(int *items, int itemCount);
+
 int main(int argc, char *argv[])
 {
   int itemCount = 9;
@@ -12,6 +14,10 @@ int main(int argc, char *argv[])
   selection(items, itemCount);
   printInts(items, 0, itemCount - 1);
 
+  return 0;
+}
+
+void selection(int *items, int itemCount) {
   int i;
   for(i = 0; i < itemCount - 1; i++) {
     // try and find item smaller than one at i
